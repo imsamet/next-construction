@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             <hr className={styles.border} />
             <div className={styles.linkBox}>
               {nav.links.map((i, key) => (
-                <Link href={i.href} className={styles.link}>
+                <Link key={key} href={i.href} className={styles.link}>
                   {i.title}
                 </Link>
               ))}
