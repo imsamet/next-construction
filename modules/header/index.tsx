@@ -13,7 +13,7 @@ const Header: React.FC = () => {
           <div className="col-md-4">
             <div className={styles.card}>
               <hr className={styles.border} />
-              <p className={styles.paragraph}>
+              <p className={cn('paragraph', styles.paragraph)}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in odio elit. Aenean sit amet egestas
                 lorem. Cras at tellus pellentesque, cursus nisl a, rutrum metus. Integer mollis mi vel fringilla mollis.
               </p>

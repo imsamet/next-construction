@@ -4,6 +4,8 @@ import * as AllIcons from './components';
 import {IconProps} from './_model';
 const Icons: React.FC<IconProps> = ({ name, size = 24, ...props }) => {
   switch (name) {
+    case 'ArrowUpRight':
+      return <AllIcons.ArrowUpRight width={size} height={size} {...props} />;
     case 'Facebook':
       return <AllIcons.Facebook width={size} height={size} {...props} />;
     case 'Linkedin':

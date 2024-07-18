@@ -1,0 +1,31 @@
+@import '@/styles/_variables';
+.section {
+  position: relative;
+}
+.card {
+  position: absolute;
+  top: -80px;
+  right: 80px;
+  z-index: 10;
+
+  max-width: 34.375rem;
+  padding: 1.875rem 3.125rem;
+  background-color: $yellow;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .cardHead {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .description {
+    font-weight: 300;
+    color: $text-grey;
+  }
+}
+.swipper {
+}
