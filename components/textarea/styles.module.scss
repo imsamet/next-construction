@@ -1,0 +1,7 @@
+@import '@/styles/_variables';
+.input {
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+  border-bottom: 1px solid $border;
+}

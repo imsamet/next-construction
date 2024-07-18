@@ -101,4 +101,10 @@ export const projects: ProjectType[] = [
     title: 'Mirage',
     description: 'Aliquam erat volutpat. Nullam aliquet urna non dui malesuada, ac egestas libero fringilla.',
   },
+  {
+    src: '/projects/project-5.jpg',
+    alt: 'project-5',
+    title: 'Cascade',
+    description: 'Nulla facilisi. Morbi malesuada felis ut urna interdum, non sollicitudin eros consectetur.',
+  },
 ];

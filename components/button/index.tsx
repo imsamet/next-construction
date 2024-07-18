@@ -4,13 +4,14 @@ import { ReactNode } from 'react';
 
 type Props = {
   label: string;
-  type?: 'primary' | 'secondary' | 'tertiary';
+  type?: 'submit' | 'reset' | 'button';
+  buttonType?: 'primary' | 'secondary' | 'tertiary';
   className?: string;
   children?: ReactNode;
 };
-const Button: React.FC<Props> = ({ label, type = 'primary', className, children }) => {
+const Button: React.FC<Props> = ({ label, type, buttonType = 'primary', className, children }) => {
   return (
-    <button className={cn(styles.container, styles[type], className)}>
+    <button type={type} className={cn(styles.container, styles[buttonType], className)}>
       {label}
       {!!children && children}
     </button>

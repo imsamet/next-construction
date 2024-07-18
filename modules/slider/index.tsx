@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import styles from './styles.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { sliders } from '@/constants/slider';
 import Image from 'next/image';
 import Icons from '@/components/icons';
@@ -27,9 +28,12 @@ const Slider: React.FC = () => {
         <Swiper
           slidesPerView={'auto'}
           spaceBetween={30}
-          pagination={{
-            clickable: true,
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
           }}
+          loop={true}
+          modules={[Autoplay, Pagination]}
           className="mySwiper"
         >
           {sliders.map((i, key) => (

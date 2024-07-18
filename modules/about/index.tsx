@@ -20,7 +20,7 @@ const About: React.FC = () => {
                 lorem. Cras at tellus pellentesque, cursus nisl a, rutrum metus. Integer mollis mi vel fringilla mollis.
                 Proin et nibh non est pretium fringilla nec nec nisi.
               </p>
-              <Button label="Diğer işler" type="tertiary" className={styles.button} />
+              <Button label="Diğer işler" buttonType="tertiary" className={styles.button} />
             </div>
           </div>
         </div>
