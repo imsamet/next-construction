@@ -7,13 +7,14 @@ type Props = {
   label: string;
   type?: 'submit' | 'reset' | 'button';
   href?: string;
+  onClick?: () => void;
   buttonType?: 'primary' | 'secondary' | 'tertiary';
   className?: string;
   children?: ReactNode;
 };
-const Button: React.FC<Props> = ({ label, type, href, buttonType = 'primary', className, children }) => {
+const Button: React.FC<Props> = ({ label, type, href, onClick, buttonType = 'primary', className, children }) => {
   const baseButton = (
-    <button type={type} className={cn(styles.container, styles[buttonType], className)}>
+    <button onClick={onClick} type={type} className={cn(styles.container, styles[buttonType], className)}>
       {label}
       {!!children && children}
     </button>

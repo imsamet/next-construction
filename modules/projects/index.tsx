@@ -21,11 +21,6 @@ const Projects: React.FC = () => {
               <ProjectCard title={i.title} description={i.description} src={i.src} />
             </div>
           ))}
-          <div className="col-12">
-            <div className={styles.bottom}>
-              <Button href="/projects" label="Tüm Projeler" />
-            </div>
-          </div>
         </div>
       </div>
     </section>
