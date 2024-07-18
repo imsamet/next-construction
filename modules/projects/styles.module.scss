@@ -1,0 +1,18 @@
+@import '@/styles/_variables';
+.section {
+  background-color: $soft-grey;
+}
+.title {
+  color: $black;
+  font-size: 48px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  max-width: 70%;
+}
+.description {
+  color: $text-grey;
+  margin-bottom: 4rem;
+}

@@ -26,7 +26,7 @@ const About: React.FC = () => {
         </div>
         <hr className={styles.hr} />
         <div className="row">
-          <div className="col-md-12 col-lg-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className={styles.skillCard}>
               <span className={styles.skillTitle}>İş Ortağı</span>
               <span className={styles.skillValue}>150</span>
@@ -36,7 +36,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <div className="col-md-12 col-lg-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className={styles.skillCard}>
               <span className={styles.skillTitle}>Deneyim</span>
               <span className={styles.skillValue}>11,5</span>
@@ -46,7 +46,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <div className="col-md-12 col-lg-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className={styles.skillCard}>
               <span className={styles.skillTitle}>Toplam Proje</span>
               <span className={styles.skillValue}>450+</span>
