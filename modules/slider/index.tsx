@@ -1,14 +1,14 @@
 import cn from 'classnames';
 import styles from './styles.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import { sliders } from '@/constants/slider';
 import Image from 'next/image';
 import Icons from '@/components/icons';
 
 const Slider: React.FC = () => {
   return (
-    <section className={cn('section', styles.section)}>
+    <section id="slider" className={cn('section', styles.section)}>
       <div className={styles.card}>
         <div className={styles.cardHead}>
           <span className={styles.title}>
@@ -29,12 +29,17 @@ const Slider: React.FC = () => {
           slidesPerView={'auto'}
           spaceBetween={30}
           autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
+            delay: 0,
+            // disableOnInteraction: false,
+            // waitForTransition: false,
           }}
+          speed={15000}
           loop={true}
-          modules={[Autoplay, Pagination]}
-          className="mySwiper"
+          allowTouchMove={true}
+          freeMode
+          preventClicks={true}
+          modules={[Autoplay]}
+          className="custom-swiper"
         >
           {sliders.map((i, key) => (
             <SwiperSlide key={key}>

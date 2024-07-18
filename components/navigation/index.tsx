@@ -6,10 +6,10 @@ import { nav } from '@/constants/nav';
 
 const Nav: React.FC = ({}) => {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <div className="container">
         <div className={styles.container}>
-          <Link href="/">
+          <Link href="/#header">
             <Image src="/logo.png" width={75} height={46} alt="metcon logo" />
           </Link>
           <div className={styles.linkBox}>
@@ -21,7 +21,7 @@ const Nav: React.FC = ({}) => {
           </div>
           <div className={styles.socialBox}>
             {nav.social.map((i, key) => (
-              <Link key={key} href={i.href} className={styles.link}>
+              <Link key={key} href={i.href} className={styles.link} target="_blank">
                 <Icons name={i.icon} size={24} />
               </Link>
             ))}

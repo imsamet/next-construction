@@ -6,13 +6,13 @@ type NavType = {
 };
 export const nav: NavType = {
   links: [
-    { href: '#', title: 'Anasayfa' },
-    { href: '#', title: 'Hakkımızda' },
-    { href: '#', title: 'Projeler' },
-    { href: '#', title: 'İletişim' },
+    { href: '/#header', title: 'Anasayfa' },
+    { href: '/#about', title: 'Hakkımızda' },
+    { href: '/#projects', title: 'Projeler' },
+    { href: '/#contact', title: 'İletişim' },
   ],
   social: [
-    { href: '#', icon: 'Linkedin' },
-    { href: '#', icon: 'Facebook' },
+    { href: 'https://linkedin.com/', icon: 'Linkedin' },
+    { href: 'https://facebook.com/', icon: 'Facebook' },
   ],
 };

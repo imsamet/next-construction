@@ -3,10 +3,11 @@ import styles from './styles.module.scss';
 import ProjectCard from '@/components/projectCard';
 import { projects } from '@/constants/projects';
 import SectionHead from '@/components/sectionHead';
+import Button from '@/components/button';
 
 const Projects: React.FC = () => {
   return (
-    <section className={cn('section', styles.section)}>
+    <section id="projects" className={cn('section', styles.section)}>
       <div className="container">
         <SectionHead
           title="Projeler"
@@ -20,6 +21,11 @@ const Projects: React.FC = () => {
               <ProjectCard title={i.title} description={i.description} src={i.src} />
             </div>
           ))}
+          <div className="col-12">
+            <div className={styles.bottom}>
+              <Button href="/projects" label="Tüm Projeler" />
+            </div>
+          </div>
         </div>
       </div>
     </section>

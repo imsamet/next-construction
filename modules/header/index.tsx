@@ -4,7 +4,7 @@ import Button from '@/components/button';
 
 const Header: React.FC = () => {
   return (
-    <header>
+    <header id="header">
       <div className="container">
         <div className={cn('row', styles.container)}>
           <div className="col-md-8">
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
           </div>
         </div>
         <div className={styles.buttonBox}>
-          <Button label="İletişime Geç" />
+          <Button href="#contact" label="İletişime Geç" />
         </div>
       </div>
     </header>

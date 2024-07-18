@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 const About: React.FC = () => {
   return (
-    <section className="section">
+    <section id="about" className="section">
       <div className="container">
         <div className="row between">
           <div className="col-md-12 col-lg-5">
@@ -20,7 +20,7 @@ const About: React.FC = () => {
                 lorem. Cras at tellus pellentesque, cursus nisl a, rutrum metus. Integer mollis mi vel fringilla mollis.
                 Proin et nibh non est pretium fringilla nec nec nisi.
               </p>
-              <Button label="Diğer işler" buttonType="tertiary" className={styles.button} />
+              <Button href="#projects" label="Projeler" buttonType="tertiary" className={styles.button} />
             </div>
           </div>
         </div>

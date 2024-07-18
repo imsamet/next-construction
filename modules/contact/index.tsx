@@ -6,7 +6,7 @@ import Textarea from '@/components/textarea';
 
 const Contact: React.FC = () => {
   return (
-    <section className="section">
+    <section id="contact" className="section">
       <div className="container">
         <SectionHead title="İletişim" />
         <form>
