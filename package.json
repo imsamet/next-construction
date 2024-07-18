@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "svgr": "svgr ./assets/icons -d ./components/icons/components --typescript --no-dimensions --replace-attr-values  \"#000={props.color}=\"",
+    "svgr": "svgr ./assets/icons -d ./components/icons/components --typescript --no-dimensions --replace-attr-values  \"#000=currentColor=\"",
     "generate-icons-index": "node generate-icons-index.cjs",
     "build-icons": "npm run svgr && npm run generate-icons-index"
   },

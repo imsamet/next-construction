@@ -1,5 +1,7 @@
+
+
 import * as AllIcons from './components';
-import { IconProps } from './_model';
+import {IconProps} from './_model';
 const Icons: React.FC<IconProps> = ({ name, size = 24, ...props }) => {
   switch (name) {
     case 'Facebook':

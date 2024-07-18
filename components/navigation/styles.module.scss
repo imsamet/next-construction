@@ -1,7 +1,8 @@
-@import "@/styles/_variables.scss";
+@import '@/styles/_variables.scss';
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 0;
 }
 .linkBox {
@@ -11,5 +12,19 @@
 
 .link {
   color: $black;
-  font-weight: 400;
+  font-weight: 600;
+  transition: $delay;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    color: $secondary;
+    border-bottom-color: $secondary;
+  }
+}
+.socialBox {
+  display: flex;
+  gap: 10px;
+  .link {
+    border: none;
+  }
 }

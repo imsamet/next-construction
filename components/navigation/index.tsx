@@ -1,6 +1,9 @@
-import Image from "next/image";
-import styles from "./styles.module.scss";
-import Link from "next/link";
+import Image from 'next/image';
+import styles from './styles.module.scss';
+import Link from 'next/link';
+import Icons from '../icons';
+import { nav } from '@/constants/nav';
+
 const Nav: React.FC = ({}) => {
   return (
     <nav>
@@ -10,18 +13,18 @@ const Nav: React.FC = ({}) => {
             <Image src="/logo.png" width={75} height={46} alt="metcon logo" />
           </Link>
           <div className={styles.linkBox}>
-            <Link href="#" className={styles.link}>
-              Home
-            </Link>
-            <Link href="#" className={styles.link}>
-              About Us
-            </Link>
-            <Link href="#" className={styles.link}>
-              Projects
-            </Link>
-            <Link href="#" className={styles.link}>
-              Contact
-            </Link>
+            {nav.links.map((i, key) => (
+              <Link key={key} href={i.href} className={styles.link}>
+                {i.title.toLocaleUpperCase('tr-TR')}
+              </Link>
+            ))}
+          </div>
+          <div className={styles.socialBox}>
+            {nav.social.map((i, key) => (
+              <Link key={key} href={i.href} className={styles.link}>
+                <Icons name={i.icon} size={24} />
+              </Link>
+            ))}
           </div>
         </div>
       </div>
