@@ -1,0 +1,15 @@
+@import "@/styles/_variables.scss";
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.linkBox {
+  display: flex;
+  gap: 26px;
+}
+
+.link {
+  color: $black;
+  font-weight: 400;
+}
