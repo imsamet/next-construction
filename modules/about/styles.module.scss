@@ -1,0 +1,66 @@
+@import '@/styles/_variables';
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 1.3px;
+}
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .paragraph {
+    color: $text-grey;
+    line-height: 1.63;
+  }
+  .button {
+    margin-top: 50px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: max-content;
+  }
+}
+
+.hr {
+  margin: 60px 0;
+  height: 1px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: $border;
+}
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0.625rem 1.875rem;
+  .skillTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.6px;
+  }
+  .skillValue {
+    font-size: 4.5rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.6px;
+  }
+  .skillDescription {
+    color: $text-grey;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.73;
+    letter-spacing: 0.3px;
+    text-align: center;
+    max-width: 300px;
+  }
+}

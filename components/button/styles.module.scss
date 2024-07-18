@@ -22,4 +22,11 @@
       color: $dark;
     }
   }
+  &.tertiary {
+    background-color: $yellow;
+    color: $black;
+    &:active {
+      background-color: #d2b838;
+    }
+  }
 }
