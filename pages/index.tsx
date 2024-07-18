@@ -1,5 +1,6 @@
 import About from '@/modules/about';
 import Header from '@/modules/header';
+import Projects from '@/modules/projects';
 import Slider from '@/modules/slider';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Slider />
       <About />
+      <Projects />
     </>
   );
 }
