@@ -1,0 +1,25 @@
+@import '@/styles/_variables';
+.container {
+  outline: none;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: $delay;
+  &.primary {
+    background-color: $black;
+    color: $white;
+    &:active {
+      background-color: $dark;
+    }
+  }
+  &.secondary {
+    background-color: transparent;
+    border: 1px solid $border;
+    color: $black;
+    &:active {
+      background-color: $border;
+      color: $dark;
+    }
+  }
+}

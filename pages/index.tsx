@@ -1,9 +1,9 @@
-import Nav from "@/components/navigation";
+import Header from '@/modules/header';
 
 export default function Home() {
   return (
     <>
-      <Nav />
+      <Header />
     </>
   );
 }
